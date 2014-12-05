@@ -43,12 +43,5 @@ DceLti::Engine.setup do |lti|
       selection_width: 300,
       selection_height: 500,
       enabled: true)
-    tool_config.canvas_course_navigation!(
-        url: tool_config.launch_url,
-        text: 'Say Hello!',
-        visibility: 'members',
-        default: 'members',
-        enabled: true
-      )
   end
 end
