@@ -36,18 +36,19 @@ DceLti::Engine.setup do |lti|
     tool_config.extend ::IMS::LTI::Extensions::Canvas::ToolConfig
     tool_config.canvas_domain!(controller.request.host)
     tool_config.canvas_privacy_public!
-    tool_config.canvas_course_navigation!(
-      url: tool_config.launch_url,
-      text: 'Say Hello!',
-      visibility: 'members',
-      default: 'members',
-      enabled: true
-    )
     tool_config.canvas_editor_button!(
       url: tool_config.launch_url,
+      icon_url: 'https://www.eduappcenter.com/examples/fish_icon.png',
       text: 'foo',
-      selection_width: 20,
-      selection_height: 20,
+      selection_width: 300,
+      selection_height: 500,
       enabled: true)
+    tool_config.canvas_course_navigation!(
+        url: tool_config.launch_url,
+        text: 'Say Hello!',
+        visibility: 'members',
+        default: 'members',
+        enabled: true
+      )
   end
 end
