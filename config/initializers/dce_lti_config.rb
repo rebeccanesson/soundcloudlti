@@ -38,9 +38,9 @@ DceLti::Engine.setup do |lti|
     tool_config.canvas_privacy_public!
     tool_config.canvas_editor_button!(
       url: tool_config.launch_url,
-      icon_url: 'https://www.eduappcenter.com/examples/fish_icon.png',
-      text: 'foo',
-      selection_width: 300,
+      icon_url: 'https://damp-lake-9499.herokuapp.com/soundcloud.jpeg',
+      text: 'Soundcloud',
+      selection_width: 500,
       selection_height: 500,
       enabled: true)
   end
