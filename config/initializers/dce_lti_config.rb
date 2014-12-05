@@ -36,10 +36,17 @@ DceLti::Engine.setup do |lti|
     tool_config.extend ::IMS::LTI::Extensions::Canvas::ToolConfig
     tool_config.canvas_domain!(controller.request.host)
     tool_config.canvas_privacy_public!
+    tool_config.canvas_course_navigation!(
+      url: tool_config.launch_url,
+      text: 'Say Hello!',
+      visibility: 'members',
+      default: 'members',
+      enabled: true
+    )
     tool_config.canvas_editor_button!(
       url: tool_config.launch_url,
       text: 'foo',
-      selection_width: 20, 
+      selection_width: 20,
       selection_height: 20,
       enabled: true)
   end
