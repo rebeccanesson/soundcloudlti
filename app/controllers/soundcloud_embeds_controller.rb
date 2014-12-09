@@ -7,10 +7,7 @@ class SoundcloudEmbedsController < ApplicationController
     track_id = track.id
     iframe = "<iframe width='100%' height='166' scrolling='no' frameborder='no' src='https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/#{track_id}&color=0066cc'></iframe>"
     logger.debug iframe
-    logger.debug session[:launch_presentation_return_url]
-    session.each do |item|
-      logger.debug item
-    end
+    logger.debug session.inspect
     redirect_to session[:launch_presentation_return_url]
   end
 
