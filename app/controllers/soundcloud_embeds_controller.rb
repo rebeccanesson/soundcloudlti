@@ -11,6 +11,7 @@ class SoundcloudEmbedsController < ApplicationController
     session.each do |item|
       logger.debug item
     end
+    redirect_to session[:launch_presentation_return_url]
   end
 
 end
