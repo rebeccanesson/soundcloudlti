@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/rebeccanesson/dce_lti.git
-  revision: 1522c7455d23bace0c87e07f7e852f2b22ee061e
+  revision: 812fc993f52327b811d98591aff63fe5793eae8b
   specs:
     dce_lti (0.2.0)
       ims-lti (~> 1.1)
