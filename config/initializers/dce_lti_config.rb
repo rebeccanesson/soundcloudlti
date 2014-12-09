@@ -41,7 +41,7 @@ DceLti::Engine.setup do |lti|
       icon_url: "https://soundcloud-lti.herokuapp.com/soundcloud.jpeg",
       text: 'Soundcloud',
       selection_width: 500,
-      selection_height: 500,
+      selection_height: 200,
       enabled: true)
   end
 end
