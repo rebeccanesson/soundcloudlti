@@ -38,4 +38,5 @@ gem 'spring',        group: :development
 # Use debugger
 # gem 'debugger', group: [:development, :test]
 
-gem 'dce_lti'
+gem 'dce_lti', :git => 'https://github.com/rebeccanesson/dce_lti.git'
+gem 'soundcloud'
